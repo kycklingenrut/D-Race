@@ -58,7 +58,7 @@ img{
     font-weight: normal;
 }
 .judgesPage{
-    padding-top: 30px;
+    padding-top: 50px;
     background-color: rgb(48, 113, 242, 0.7);
     padding-bottom: 100px;
 }

@@ -12,7 +12,14 @@ module.exports = {
             options: {
               networkTimeoutSeconds: 5
             },
-            urlPattern: ''
+            urlPattern: 'http://www.nokeynoshade.party/api/judges?limit=12'
+          },
+          {
+            handler: 'NetworkFirst',
+            options: {
+              networkTimeoutSeconds: 5
+            },
+            urlPattern: 'http://www.nokeynoshade.party/api/queens/winners'
           }
         ]
       }

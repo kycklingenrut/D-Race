@@ -17,7 +17,6 @@ import myFooter from './components/Footer.vue'
  
 export default {
     components: { myFooter },
-  
 }
 </script>
 

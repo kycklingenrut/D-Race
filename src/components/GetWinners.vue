@@ -28,7 +28,7 @@
 export default {
   created() {
     this.loading = true;
-    fetch("http://www.nokeynoshade.party/api/queens/winners")
+    fetch("https://www.nokeynoshade.party/api/queens/winners")
       .then((response) => response.json())
       .then((result) => {
         this.loading = false;
@@ -61,13 +61,13 @@ export default {
 <style>
 .winnersPage {
   padding-top: 30px;
-  background-color: #F5A7D1;
+  background-color: #f5a7d1;
   padding-bottom: 100px;
 }
 ul {
   list-style-type: none;
 }
-select{
+select {
   padding: 5px;
 }
 img {

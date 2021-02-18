@@ -1,5 +1,6 @@
 <template>
   <div class="winnersPage">
+    <h1>{{ category }}</h1>
     <p>Sort by:</p>
     <select v-model="selected">
       <option @click="sortedNames('name')" value="name">Name</option>
@@ -42,6 +43,7 @@ export default {
       loading: false,
     };
   },
+  props: ["category"],
   methods: {
     sortedNames() {
       return this.queens.sort((a, b) => a.name > b.name);

@@ -1,7 +1,6 @@
 <template>
   <div id="winnersPage">
-    <h1>Winners</h1>
-    <div class="card-grid"><GetWinners></GetWinners></div>
+    <div class="card-grid"><GetWinners :category="winners"></GetWinners></div>
   </div>
 </template>
 
@@ -12,6 +11,11 @@ export default {
   name: "Winners",
   components: {
     GetWinners,
+  },
+  data() {
+    return {
+      winners: "Winners",
+    };
   },
 };
 </script>

@@ -1,5 +1,6 @@
 <template>
   <div class="judgesPage">
+    <h1>{{ category }}</h1>
     <b-spinner v-if="loading" label="Spinning"></b-spinner>
     <ul v-else class="grid">
       <li class="judges-list" v-for="judge in judges" :key="judge.id">
@@ -31,6 +32,7 @@ export default {
         this.judges = result;
       });
   },
+  props: ["category"],
   data() {
     return {
       judges: [],
